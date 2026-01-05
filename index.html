@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Victory - Restaurant</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <!-- Header / Top nav -->
+    <header class="site-header">
+
+        <!-- checkbox must be ABOVE nav -->
+        <input type="checkbox" id="nav-toggle">
+
+        <div class="topbar">
+            <h1 id="main-heading">Victory</h1>
+
+            <label for="nav-toggle" class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+        </div>
+
+        <nav id="navbar" class="main-nav">
+            <a href="#" class="nav-items">HOME</a>
+            <a href="#" class="nav-items">OUR MENUS</a>
+            <a href="#" class="nav-items">BLOG ENTRIES</a>
+            <a href="#" class="nav-items">CONTACT US</a>
+        </nav>
+    </header>
+
+
+
+    <!-- Hero / banner -->
+    <section id="banner" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h5>HERE YOU CAN FIND DELICIOUS FOODS</h5>
+            <h1>ASIAN RESTAURANT</h1>
+            <p class="hero-sub">Quisque nec nibh id lacus fringilla eleifend sed sit amet sem. Donec lectus odio, mollis
+                a nisi non, tempor interdum nisi.</p>
+            <button id="banner-btn" class="btn btn-primary">ORDER RIGHT NOW</button>
+        </div>
+    </section>
+
+    <!-- Cook block with center card -->
+    <!-- Cook block -->
+    <section class="cook-wrapper">
+
+        <div class="cook">
+            <!-- Left image -->
+            <div class="cook-items cook-left" style="background-image:url('Assets/cook_01.jpg')">
+            </div>
+
+            <!-- Center card -->
+            <div id="cook-order-details">
+                <h3>WE COOK DELICIOUS</h3>
+
+                <div id="cook-contact">
+                    <p>YOU CAN CALL US ON</p>
+                    <h4>+ 1234 567 8910</h4>
+                </div>
+
+                <div id="or-div">OR</div>
+
+                <button class="btn btn-white">ORDER NOW</button>
+            </div>
+
+            <!-- Right image -->
+            <div class="cook-items cook-right" style="background-image:url('Assets/cook_02.jpg')">
+            </div>
+        </div>
+
+        <!-- Menu circles BELOW the cook section -->
+        <div class="items">
+            <div class="menu-item">
+                <img class="item-img" src="Assets/cook_breakfast.png" alt="">
+                <p>Breakfast</p>
+            </div>
+            <div class="menu-item">
+                <img class="item-img" src="Assets/cook_lunch.png" alt="">
+                <p>Lunch</p>
+            </div>
+            <div class="menu-item">
+                <img class="item-img" src="Assets/cook_dinner.png" alt="">
+                <p>Dinner</p>
+            </div>
+            <div class="menu-item">
+                <img class="item-img" src="Assets/cook_dessert.png" alt="">
+                <p>Desserts</p>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- Book / reservation area (dark background with centered reservation card) -->
+    <section class="book">
+        <h4 class="book-heading">BOOK YOUR TABLE NOW</h4>
+        <div id="book-child">
+            <div class="book-items" id="book-img" style="background-image:url('Assets/book_left_image.jpg')"></div>
+
+            <!-- Reservation white box overlay -->
+            <div class="book-items" id="reservation-box">
+                <h2>Reservation</h2>
+                <form class="reservation-form">
+                    <div class="row">
+                        <select aria-label="Select day">
+                            <option selected disabled>Select day</option>
+                            <option>Monday</option>
+                            <option>Tuesday</option>
+                            <option>Wednesday</option>
+                        </select>
+                        <select aria-label="Select hour">
+                            <option selected disabled>Select hour</option>
+                            <option>10:00 AM</option>
+                            <option>12:00 PM</option>
+                            <option>6:00 PM</option>
+                        </select>
+                    </div>
+
+                    <div class="row">
+                        <input type="text" placeholder="Full name" />
+                        <input type="tel" placeholder="Phone number" />
+                    </div>
+
+                    <div class="row">
+                        <select>
+                            <option selected disabled>How many persons?</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4+</option>
+                        </select>
+                        <button type="submit" class="btn btn-primary">BOOK TABLE</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- App CTA -->
+    <section class="application">
+        <h4>GET APPLICATION FOR YOUR PHONE</h4>
+        <button class="btn btn-white">DOWNLOAD NOW</button>
+    </section>
+
+    <!-- Weekly featured food -->
+    <section class="weekly">
+        <h3>WEEKLY FEATURED FOOD</h3>
+
+        <div class="items-container">
+            <article class="weekly-items">
+                <h3 class="card-title">Breakfast</h3>
+                <div class="inner">
+                    <div class="img" id="img1" style="background-image:url('Assets/breakfast_item.jpg')">
+                        <span class="price-badge">$4.50</span>
+                    </div>
+                    <h4>Kale Chips Art Party</h4>
+                    <p class="card-desc">Cras mattis semper purus varius consectetur, small fresh herbs and spices.</p>
+                </div>
+            </article>
+
+            <article class="weekly-items">
+                <h3 class="card-title">Lunch</h3>
+                <div class="inner">
+                    <div class="img" id="img2" style="background-image:url('Assets/lunch_item.jpg')">
+                        <span class="price-badge">$7.50</span>
+                    </div>
+                    <h4>Tayaki Gastro Tousled</h4>
+                    <p class="card-desc">Fresh seasonal vegetables and house sauce served with rice.</p>
+                </div>
+            </article>
+
+            <article class="weekly-items">
+                <h3 class="card-title">Dinner</h3>
+                <div class="inner">
+                    <div class="img" id="img3" style="background-image:url('Assets/dinner_item.jpg')">
+                        <span class="price-badge">$12.50</span>
+                    </div>
+                    <h4>Batch Squid Jean</h4>
+                    <p class="card-desc">A flavorful entree with premium seafood and herbs.</p>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- Blog Grid -->
+    <div id="blog-container">
+        <h3>OUR BLOG POST</h3>
+
+        <div id="blogs">
+            <div class="blog">
+                <div class="blog-img" style="background-image:url('Assets/blog_post_01.jpg')">
+                    <span class="blog-date">26 Oct 2017</span>
+                </div>
+                <div class="blog-content">
+                    <h4>Stumptown Tofu Schlitz</h4>
+                    <p class="blog-meta">Branding / Admin</p>
+                    <p class="blog-text">
+                        Short excerpt about this blog post — continue reading to learn more.
+                    </p>
+                    <a href="#" class="read-more">CONTINUE READING</a>
+                </div>
+            </div>
+
+            <div class="blog">
+                <div class="blog-img" style="background-image:url('Assets/blog_post_02.jpg')">
+                    <span class="blog-date">21 Oct 2017</span>
+                </div>
+                <div class="blog-content">
+                    <h4>Succulents Hashtag Folk</h4>
+                    <p class="blog-meta">Branding / Admin</p>
+                    <p class="blog-text">
+                        Short excerpt about this blog post — continue reading to learn more.
+                    </p>
+                    <a href="#" class="read-more">CONTINUE READING</a>
+                </div>
+            </div>
+
+            <div class="blog">
+                <div class="blog-img" style="background-image:url('Assets/blog_post_03.jpg')">
+                    <span class="blog-date">11 Oct 2017</span>
+                </div>
+                <div class="blog-content">
+                    <h4>Knaus Sriracha Pinterest</h4>
+                    <p class="blog-meta">Dessert / Chef</p>
+                    <p class="blog-text">
+                        Short excerpt about this blog post — continue reading to learn more.
+                    </p>
+                    <a href="#" class="read-more">CONTINUE READING</a>
+                </div>
+            </div>
+
+            <div class="blog">
+                <div class="blog-img" style="background-image:url('Assets/blog_post_04.jpg')">
+                    <span class="blog-date">03 Oct 2017</span>
+                </div>
+                <div class="blog-content">
+                    <h4>Crucifix Selvage Coat</h4>
+                    <p class="blog-meta">Plate / Chef</p>
+                    <p class="blog-text">
+                        Short excerpt about this blog post — continue reading to learn more.
+                    </p>
+                    <a href="#" class="read-more">CONTINUE READING</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Footer / newsletter -->
+    <footer class="site-footer">
+        <div class="footer-cta">
+            <h4>SIGNUP FOR OUR NEWSLETTERS</h4>
+            <form class="newsletter">
+                <input type="email" placeholder="Enter your email here..." />
+                <button class="btn btn-primary" type="submit">SEND MESSAGE</button>
+            </form>
+        </div>
+
+        <div class="footer-bottom">
+            <p>Copyright © 2026 Victory Template</p>
+            <div class="socials">
+                <span class="social"><i class="fa-brands fa-facebook-f"></i></span>
+                <span class="social"><i class="fa-brands fa-twitter"></i></span>
+                <span class="social"><i class="fa-brands fa-linkedin-in"></i></span>
+                <span class="social"><i class="fa-solid fa-wifi"></i></span>
+            </div>
+            <p>Designed by <span id="footer-name">Praveen Kumar</span></p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
